@@ -1,2 +1,11 @@
 <h1>Cocktails#new</h1>
 <p>Find me in app/views/cocktails/new.html.erb</p>
+
+
+<%= simple_form_for(@cocktail) do |d| %>
+  <%= d.error_notification %>
+
+  <%= d.input :name, label: "Cocktail name (e.g. 'Whiskey Sour')" %>
+
+  <%= d.button :submit %>
+<% end %>

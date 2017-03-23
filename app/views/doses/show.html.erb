@@ -1,2 +1,6 @@
 <h1>Doses#show</h1>
 <p>Find me in app/views/doses/show.html.erb</p>
+
+<%= @dose.ingredient.name  %>
+<%= @dose.description  %>
+<%= link_to "Delete Dose", dose_path(@dose), method: :delete  %>
