@@ -1,2 +1,8 @@
 <h1>Cocktails#index</h1>
 <p>Find me in app/views/cocktails/index.html.erb</p>
+
+<% @cocktails do |cocktail| %>
+<%= cocktail.name  %>
+<% end %>
+
+<%= link_to "go to reddit", to: "http://www.reddit.com"  %>
